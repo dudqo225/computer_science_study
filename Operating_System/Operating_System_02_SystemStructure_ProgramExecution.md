@@ -1,4 +1,4 @@
-# Operating System 02
+# Operating System 02 | System Structure & Program Execution
 
 ### 1. System Structure
 
