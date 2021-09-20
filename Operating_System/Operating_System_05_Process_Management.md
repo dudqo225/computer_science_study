@@ -145,21 +145,6 @@ int main()
 
 <br>
 
-### CPU scheduler & dispatcher
-
-- CPU scheduler
-  - ready 상태의 프로세스 중에서 이번에 CPU를 줄 프로세스를 고름
-- Dispatcher
-  - CPU의 제어권을 CPU 스케쥴러에 의해 선택된 프로세스에게 넘긴
-  - 이 과정을 context switch(문맥 교환)이라고 함
-- CPU 스케쥴링이 필요한 경우
-  - Running > Blocked (I/O 요청하는 시스템 콜) -nonpreemptive(강제로 빼앗지 않고 자진 반납)
-  - Running > Ready (할당시간 만료로 timer interrupt) - preemptive (강제로 빼앗음)
-  - Blocked > Ready (I/O 완료 후 인터럽트) - preemptive
-  - Terminate - nonpreemptive
-
-<br>
-
 > 본 내용은 이화여자대학교 반효경 교수님 운영체제 강의 내용입니다.
 >
 > [운영체제 | 이화여자대학교 반효경](http://www.kocw.net/home/search/kemView.do?kemId=1046323)
